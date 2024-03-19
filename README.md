@@ -5,7 +5,7 @@
 
 2- install all req.txt lib with pip install -r req.txt
 
-3- move config_setting.sample to config_setting.py and set up your db config
+3- move config.sample to config.py and put the todoapp dir and set up your db config
 
 
 ## برای شروع(Persian)
@@ -14,7 +14,7 @@
 
 2- بعد محیط مجازی خود را روشن کرده و تمام کتابخانه های فایل req.txt را با کامند pip install -r req.txt نصب کنید
 
-3- بعد فایل config_setting.sample را به config_setting.py تغییر دهید و داخل آن کانفیگ دیتابیس خود را قرار دهید.
+3- بعد فایل config.sample را به config.py تغییر دهید و ان را داخل پوشه todoapp بندازید و داخل آن کانفیگ دیتابیس خود را قرار دهید.
 
 ## TODO
 - [x] add-todo-api
