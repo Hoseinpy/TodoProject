@@ -1,4 +1,4 @@
-welcome
+## WELCOME TO TODO_PROJECT
 
 ## START
 1- create venv with pythin -m venv venv
