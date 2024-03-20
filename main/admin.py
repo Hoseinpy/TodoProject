@@ -4,6 +4,6 @@ from .models import TodoModel
 
 @admin.register(TodoModel)
 class TodoAdmin(admin.ModelAdmin):
-    list_display = ['name', 'body', 'is_done']
+    list_display = ['id' ,'user', 'name', 'body', 'is_done']
 
 
