@@ -17,5 +17,6 @@
 3- بعد فایل config.sample را به config.py تغییر دهید و ان را داخل پوشه todoapp بندازید و داخل آن کانفیگ دیتابیس خود را قرار دهید.
 
 ## TODO
+- [x] todo-list-api
 - [x] add-todo-api
-- [ ] detail-api
+- [x] detail-api
