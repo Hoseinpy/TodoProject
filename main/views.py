@@ -3,6 +3,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from .serializers import TodoSerializer
 from .models import TodoModel
+from rest_framework import generics
 
 
 
@@ -20,15 +21,17 @@ class AddApiView(APIView):
 
 
 
-class DetailApiView(APIView):
+class DetailApiView(generics.RetrieveUpdateDestroyAPIView):
     """
     this api for see and update and remove todo
     """
+    queryset = TodoModel.objects.all().order_by('created')
+    serializer_class = TodoSerializer
+
+
+class StatsApiView(APIView): #TODO: fix this
     def get(self, request):
-        pass
-
-    def put(self, request):
-        pass
-
-    def delete(self, request):
-        pass
+        user = request.user.id
+        print(user)
+        todo = TodoModel.objects.filter(user=user, is_done=True).count()
+        return Response(f'your total done todo is: {todo}', status.HTTP_200_OK)

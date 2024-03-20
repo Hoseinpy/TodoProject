@@ -1,5 +1,6 @@
 from rest_framework.test import APITestCase
 from django.urls import reverse
+from .models import TodoModel
 
 class TodoAppTest(APITestCase):
     
@@ -8,7 +9,10 @@ class TodoAppTest(APITestCase):
 
         response = self.client.post(reverse('add-api'), data=data)
         self.assertEqual(response.status_code, 201)
-    
-    
-    def test_detail_todo_api(self):
-        pass
+
+
+class StatsTest(APITestCase):
+
+    def test_stats_url(self):
+        response = self.client.get(reverse('stats-api'))
+        self.assertEqual(response.status_code, 200)
