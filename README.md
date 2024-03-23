@@ -20,6 +20,3 @@
 - [x] todo-list-api
 - [x] add-todo-api
 - [x] detail-api
-
-
-vless://fc1fd1db-d714-4a8d-d95b-ec57502361ee@www.speedtest.net:2096?path=%2Fws&security=tls&encryption=none&host=qaz.cactos.site&type=ws&sni=qaz.cactos.site#qaz-Amir
